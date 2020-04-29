@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <font-family ="Roboto" , sans-serif></font-family>
+    <h1>Find Routes on Your Street</h1>
+    <p></p>
+    <main>
+      <div id="form">
+        <form id="myform">
+          Street Name :
+          <input type="text" id="name" name="name" value="" /> &nbsp; &nbsp;
+
+          <label for="type">Street Type :</label>
+
+          <select id="type">
+            <option value="Avenue">Avenue</option>
+            <option value="Bay">Bay</option>
+            <option value="Street">Street</option>
+            <option value="Drive">Drive</option>
+          </select>
+          <input type="submit" value="Find" />
+        </form>
+      </div>
+    </main>
+    <br><br>
+    <h3>Routes On the Street Are :</h4>
+    <div id="displaystops"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
